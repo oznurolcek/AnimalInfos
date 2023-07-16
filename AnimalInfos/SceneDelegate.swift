@@ -18,11 +18,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         let storyboard = UIStoryboard(name: "MainViewController", bundle: nil)
+
+        guard let navBar = storyboard.instantiateViewController(withIdentifier: "CustomNavigationController") as? CustomNavigationController else { return }
         
-        guard let mainVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as? ViewController else {
-            return
-        }
-        window.rootViewController = mainVC
+//        let storyboard = UIStoryboard(name: "MainViewController", bundle: nil)
+//
+//        guard let mainVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as? ViewController else {
+//            return
+//        }
+        window.rootViewController = navBar
         window.makeKeyAndVisible()
         self.window = window
     }

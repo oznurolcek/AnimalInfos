@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     
     
 
+  
     @IBOutlet var animalViews: [Animals]!
     
     @IBOutlet var animalImages: [UIImageView]!
+    
     
     
     override func viewDidLoad() {
@@ -27,6 +29,10 @@ class ViewController: UIViewController {
         
         for i in 0..<animalImages.count {
             animalImages[i].layer.cornerRadius = 24
+        }
+        
+        for i in 0..<animalViews.count {
+            animalViews[i].layer.cornerRadius = 24
         }
         
         setupAnimals()
@@ -42,7 +48,7 @@ class ViewController: UIViewController {
         animalViews[5].webLink = "https://en.wikipedia.org/wiki/Lion "
         animalViews[6].webLink = "https://en.wikipedia.org/wiki/Zebra"
         animalViews[7].webLink = "https://en.wikipedia.org/wiki/Common_ostrich"
-        
+
         for i in 0..<animalViews.count {
             animalViews[i].openWebAction = routeInfoVC()
         }
@@ -64,3 +70,7 @@ class ViewController: UIViewController {
     
 }
 
+
+class CustomNavigationController : UINavigationController {
+    
+}

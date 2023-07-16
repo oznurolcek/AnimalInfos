@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8932F33A2A642A6E00F5D26D /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932F3392A642A6E00F5D26D /* Info.storyboard */; };
+		8932F33A2A642A6E00F5D26D /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932F3392A642A6E00F5D26D /* InfoViewController.storyboard */; };
 		8932F33D2A643EBC00F5D26D /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932F33C2A643EBC00F5D26D /* Animals.swift */; };
 		8932F33F2A643EDF00F5D26D /* Animals.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8932F33E2A643EDF00F5D26D /* Animals.xib */; };
 		89AF71AD2A62DD2B00ACF8D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF71AC2A62DD2B00ACF8D9 /* AppDelegate.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8932F3392A642A6E00F5D26D /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		8932F3392A642A6E00F5D26D /* InfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoViewController.storyboard; sourceTree = "<group>"; };
 		8932F33C2A643EBC00F5D26D /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		8932F33E2A643EDF00F5D26D /* Animals.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Animals.xib; sourceTree = "<group>"; };
 		89AF71A92A62DD2B00ACF8D9 /* AnimalInfos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalInfos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				89AF71C52A62DDD800ACF8D9 /* InfoViewController.swift */,
-				8932F3392A642A6E00F5D26D /* Info.storyboard */,
+				8932F3392A642A6E00F5D26D /* InfoViewController.storyboard */,
 			);
 			path = "Info Page";
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89AF71BC2A62DD2D00ACF8D9 /* LaunchScreen.storyboard in Resources */,
-				8932F33A2A642A6E00F5D26D /* Info.storyboard in Resources */,
+				8932F33A2A642A6E00F5D26D /* InfoViewController.storyboard in Resources */,
 				89AF71B92A62DD2D00ACF8D9 /* Assets.xcassets in Resources */,
 				89AF71B42A62DD2B00ACF8D9 /* MainViewController.storyboard in Resources */,
 				8932F33F2A643EDF00F5D26D /* Animals.xib in Resources */,

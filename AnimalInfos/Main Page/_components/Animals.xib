@@ -7,9 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="177" height="319"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -20,7 +20,7 @@
                         <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="openWebAct:" destination="iN0-l3-epB" eventType="touchUpInside" id="f7f-E8-tWE"/>
+                        <action selector="openWebAct:" destination="-1" eventType="touchUpInside" id="S0g-4V-945"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0i-yX-NRy">
@@ -30,7 +30,7 @@
                         <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="openVideoAct:" destination="iN0-l3-epB" eventType="touchUpInside" id="d7d-pk-1Qk"/>
+                        <action selector="openVideoAct:" destination="-1" eventType="touchUpInside" id="mJd-iS-lzn"/>
                     </connections>
                 </button>
             </subviews>

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="1063"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUr-IC-tgJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="950"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GM-Bh-hTU" userLabel="cheetahView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="8" width="177" height="319"/>
@@ -291,14 +291,13 @@
                                             <constraint firstItem="4nq-It-R30" firstAttribute="top" secondItem="j1o-OC-uJI" secondAttribute="bottom" constant="16" id="0IH-Do-ALu"/>
                                             <constraint firstItem="3GM-Bh-hTU" firstAttribute="top" secondItem="JUr-IC-tgJ" secondAttribute="top" constant="8" id="5kZ-DM-x6r"/>
                                             <constraint firstItem="dxb-DM-B45" firstAttribute="leading" secondItem="JUr-IC-tgJ" secondAttribute="leading" constant="8" id="6Og-vz-qU9"/>
-                                            <constraint firstAttribute="height" constant="1000" id="H57-Sb-yMh"/>
+                                            <constraint firstAttribute="height" constant="950" id="H57-Sb-yMh"/>
                                             <constraint firstAttribute="trailing" secondItem="F9t-08-gQA" secondAttribute="trailing" constant="8" id="Hug-0I-rNm"/>
                                             <constraint firstItem="K8W-fp-nZr" firstAttribute="top" secondItem="dxb-DM-B45" secondAttribute="bottom" constant="16" id="OK2-aC-y7S"/>
                                             <constraint firstAttribute="trailing" secondItem="lR5-yH-82d" secondAttribute="trailing" constant="8" id="SkQ-Bt-4oq"/>
                                             <constraint firstItem="lR5-yH-82d" firstAttribute="top" secondItem="F9t-08-gQA" secondAttribute="bottom" constant="16" id="Spo-lJ-2Eh"/>
                                             <constraint firstItem="j1o-OC-uJI" firstAttribute="top" secondItem="JUr-IC-tgJ" secondAttribute="top" constant="8" id="TNo-pO-Ct4"/>
                                             <constraint firstItem="brY-wk-gns" firstAttribute="top" secondItem="K8W-fp-nZr" secondAttribute="bottom" constant="16" id="WLy-my-gz6"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1000" id="WV5-i6-NXt"/>
                                             <constraint firstItem="F9t-08-gQA" firstAttribute="top" secondItem="4nq-It-R30" secondAttribute="bottom" constant="16" id="a80-YN-3Tq"/>
                                             <constraint firstItem="K8W-fp-nZr" firstAttribute="leading" secondItem="JUr-IC-tgJ" secondAttribute="leading" constant="8" id="aUw-aP-XCn"/>
                                             <constraint firstAttribute="trailing" secondItem="4nq-It-R30" secondAttribute="trailing" constant="8" id="bm6-kO-dw0"/>
@@ -352,32 +351,32 @@
                     <navigationItem key="navigationItem" id="593-T1-WjG"/>
                     <size key="freeformSize" width="393" height="1200"/>
                     <connections>
-                        <outletCollection property="animalImages" destination="M4m-wU-eHo" collectionClass="NSMutableArray" id="U2E-gB-e9L"/>
-                        <outletCollection property="animalImages" destination="okt-Tt-SNu" collectionClass="NSMutableArray" id="zhK-Xm-QP8"/>
-                        <outletCollection property="animalImages" destination="Ob0-GH-AqW" collectionClass="NSMutableArray" id="PvF-ud-Csb"/>
-                        <outletCollection property="animalImages" destination="laq-w2-Gxf" collectionClass="NSMutableArray" id="9Am-MH-lSD"/>
-                        <outletCollection property="animalImages" destination="U38-Eu-Mo8" collectionClass="NSMutableArray" id="eBT-6q-uNh"/>
-                        <outletCollection property="animalImages" destination="9qf-Kv-NLn" collectionClass="NSMutableArray" id="iIt-23-nRk"/>
-                        <outletCollection property="animalImages" destination="hky-B2-ngR" collectionClass="NSMutableArray" id="mlA-GE-oYq"/>
-                        <outletCollection property="animalImages" destination="8Cm-hn-4U4" collectionClass="NSMutableArray" id="RJX-xw-lC9"/>
-                        <outletCollection property="animalViews" destination="3GM-Bh-hTU" collectionClass="NSMutableArray" id="k3f-ds-tKG"/>
-                        <outletCollection property="animalViews" destination="j1o-OC-uJI" collectionClass="NSMutableArray" id="ku2-ns-Ltw"/>
-                        <outletCollection property="animalViews" destination="dxb-DM-B45" collectionClass="NSMutableArray" id="lyX-n3-MuC"/>
-                        <outletCollection property="animalViews" destination="4nq-It-R30" collectionClass="NSMutableArray" id="SWn-Y4-aKa"/>
-                        <outletCollection property="animalViews" destination="K8W-fp-nZr" collectionClass="NSMutableArray" id="VwX-to-nfH"/>
-                        <outletCollection property="animalViews" destination="F9t-08-gQA" collectionClass="NSMutableArray" id="daY-hY-vdp"/>
-                        <outletCollection property="animalViews" destination="brY-wk-gns" collectionClass="NSMutableArray" id="0pF-pP-fYt"/>
-                        <outletCollection property="animalViews" destination="lR5-yH-82d" collectionClass="NSMutableArray" id="TQp-u7-EYU"/>
+                        <outletCollection property="animalViews" destination="3GM-Bh-hTU" collectionClass="NSMutableArray" id="7qn-xG-xoY"/>
+                        <outletCollection property="animalViews" destination="j1o-OC-uJI" collectionClass="NSMutableArray" id="pmY-q3-C1E"/>
+                        <outletCollection property="animalViews" destination="dxb-DM-B45" collectionClass="NSMutableArray" id="9Yf-Vr-OYi"/>
+                        <outletCollection property="animalViews" destination="4nq-It-R30" collectionClass="NSMutableArray" id="NTq-Sr-FOf"/>
+                        <outletCollection property="animalViews" destination="K8W-fp-nZr" collectionClass="NSMutableArray" id="9eb-jf-sFK"/>
+                        <outletCollection property="animalViews" destination="F9t-08-gQA" collectionClass="NSMutableArray" id="FlV-cB-fnF"/>
+                        <outletCollection property="animalViews" destination="brY-wk-gns" collectionClass="NSMutableArray" id="C5D-zi-UHQ"/>
+                        <outletCollection property="animalViews" destination="lR5-yH-82d" collectionClass="NSMutableArray" id="YwX-s0-Dk5"/>
+                        <outletCollection property="animalImages" destination="M4m-wU-eHo" collectionClass="NSMutableArray" id="0rb-As-Gfe"/>
+                        <outletCollection property="animalImages" destination="okt-Tt-SNu" collectionClass="NSMutableArray" id="GUS-HT-G4f"/>
+                        <outletCollection property="animalImages" destination="Ob0-GH-AqW" collectionClass="NSMutableArray" id="p6h-6G-3Cg"/>
+                        <outletCollection property="animalImages" destination="laq-w2-Gxf" collectionClass="NSMutableArray" id="VlP-dA-sJg"/>
+                        <outletCollection property="animalImages" destination="U38-Eu-Mo8" collectionClass="NSMutableArray" id="nWn-gC-Rgq"/>
+                        <outletCollection property="animalImages" destination="9qf-Kv-NLn" collectionClass="NSMutableArray" id="KL0-lZ-XXG"/>
+                        <outletCollection property="animalImages" destination="hky-B2-ngR" collectionClass="NSMutableArray" id="2ni-SA-zbN"/>
+                        <outletCollection property="animalImages" destination="8Cm-hn-4U4" collectionClass="NSMutableArray" id="O7g-Qz-4ew"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="RXl-fq-CbN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dIC-zD-iDH" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CustomNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="dIC-zD-iDH" customClass="CustomNavigationController" customModule="AnimalInfos" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qRI-JM-P2Y">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
