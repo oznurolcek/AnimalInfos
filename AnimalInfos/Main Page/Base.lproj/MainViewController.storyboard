@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIC-zD-iDH">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" title="Main Page" id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalInfos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7I-nO-eAI">
+                                <rect key="frame" x="0.0" y="103" width="393" height="1063"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUr-IC-tgJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GM-Bh-hTU" userLabel="cheetahView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="177" height="319"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheetah" translatesAutoresizingMaskIntoConstraints="NO" id="M4m-wU-eHo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.66666666666663"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvE-eu-KRt">
+                                                        <rect key="frame" x="16" y="162.33333333333331" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wze-Le-49k">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="RvE-eu-KRt" firstAttribute="leading" secondItem="3GM-Bh-hTU" secondAttribute="leading" constant="16" id="BrX-vY-KnV"/>
+                                                    <constraint firstItem="RvE-eu-KRt" firstAttribute="top" secondItem="Wze-Le-49k" secondAttribute="bottom" constant="4" id="aW7-1c-ohV"/>
+                                                    <constraint firstItem="Wze-Le-49k" firstAttribute="leading" secondItem="3GM-Bh-hTU" secondAttribute="leading" constant="16" id="ajQ-Sy-6s4"/>
+                                                    <constraint firstItem="Wze-Le-49k" firstAttribute="top" secondItem="3GM-Bh-hTU" secondAttribute="top" constant="124" id="fkz-By-c1p"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Wze-Le-49k" secondAttribute="trailing" constant="16" id="rJx-hL-Dvz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RvE-eu-KRt" secondAttribute="trailing" constant="16" id="wtz-b5-IWX"/>
+                                                    <constraint firstItem="Wze-Le-49k" firstAttribute="centerX" secondItem="3GM-Bh-hTU" secondAttribute="centerX" id="zoX-1c-T5f"/>
+                                                    <constraint firstItem="Wze-Le-49k" firstAttribute="centerX" secondItem="3GM-Bh-hTU" secondAttribute="centerX" id="zsX-jH-8bM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1o-OC-uJI" userLabel="elephantView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="8" width="177" height="319"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="okt-Tt-SNu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.66666666666663"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnR-O2-0gJ">
+                                                        <rect key="frame" x="16" y="162.33333333333331" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThJ-78-dr7">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="ThJ-78-dr7" firstAttribute="top" secondItem="j1o-OC-uJI" secondAttribute="top" constant="124" id="01e-2i-iU1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ThJ-78-dr7" secondAttribute="trailing" constant="16" id="O06-Mn-Xli"/>
+                                                    <constraint firstItem="LnR-O2-0gJ" firstAttribute="leading" secondItem="j1o-OC-uJI" secondAttribute="leading" constant="16" id="SfL-E2-oxu"/>
+                                                    <constraint firstItem="LnR-O2-0gJ" firstAttribute="top" secondItem="ThJ-78-dr7" secondAttribute="bottom" constant="4" id="Y26-Dq-TN1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LnR-O2-0gJ" secondAttribute="trailing" constant="16" id="cJS-00-pxx"/>
+                                                    <constraint firstItem="ThJ-78-dr7" firstAttribute="leading" secondItem="j1o-OC-uJI" secondAttribute="leading" constant="16" id="dY4-so-fX2"/>
+                                                    <constraint firstItem="LnR-O2-0gJ" firstAttribute="top" secondItem="ThJ-78-dr7" secondAttribute="bottom" constant="4" id="uk0-7a-ckV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxb-DM-B45" userLabel="giraffeView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="343" width="177" height="318.66666666666674"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giraffe" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-GH-AqW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.66666666666674"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDZ-U4-ngf">
+                                                        <rect key="frame" x="16" y="162.33333333333337" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxZ-im-MmS">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="VxZ-im-MmS" firstAttribute="leading" secondItem="dxb-DM-B45" secondAttribute="leading" constant="16" id="4vh-nD-qvo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cDZ-U4-ngf" secondAttribute="trailing" constant="16" id="AyX-ud-sZe"/>
+                                                    <constraint firstItem="cDZ-U4-ngf" firstAttribute="leading" secondItem="dxb-DM-B45" secondAttribute="leading" constant="16" id="CMV-le-l0w"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VxZ-im-MmS" secondAttribute="trailing" constant="16" id="Czq-1n-4EO"/>
+                                                    <constraint firstItem="cDZ-U4-ngf" firstAttribute="top" secondItem="VxZ-im-MmS" secondAttribute="bottom" constant="4" id="Hdz-yM-7wy"/>
+                                                    <constraint firstItem="cDZ-U4-ngf" firstAttribute="top" secondItem="VxZ-im-MmS" secondAttribute="bottom" constant="4" id="oPE-nS-CcF"/>
+                                                    <constraint firstItem="VxZ-im-MmS" firstAttribute="top" secondItem="dxb-DM-B45" secondAttribute="top" constant="124" id="teg-Ms-Ybf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nq-It-R30" userLabel="gorillaView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="343" width="177" height="318.66666666666674"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gorilla" translatesAutoresizingMaskIntoConstraints="NO" id="laq-w2-Gxf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.66666666666674"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0K-X8-I39">
+                                                        <rect key="frame" x="16" y="162.33333333333337" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtb-ZS-Rtu">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="gtb-ZS-Rtu" firstAttribute="top" secondItem="4nq-It-R30" secondAttribute="top" constant="124" id="72y-1v-gGi"/>
+                                                    <constraint firstItem="gtb-ZS-Rtu" firstAttribute="leading" secondItem="4nq-It-R30" secondAttribute="leading" constant="16" id="Hhj-Mr-TCj"/>
+                                                    <constraint firstItem="Q0K-X8-I39" firstAttribute="top" secondItem="gtb-ZS-Rtu" secondAttribute="bottom" constant="4" id="X3B-wA-6Qn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Q0K-X8-I39" secondAttribute="trailing" constant="16" id="jib-iC-ajv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gtb-ZS-Rtu" secondAttribute="trailing" constant="16" id="nhS-t4-7gg"/>
+                                                    <constraint firstItem="Q0K-X8-I39" firstAttribute="top" secondItem="gtb-ZS-Rtu" secondAttribute="bottom" constant="4" id="ohn-zT-66B"/>
+                                                    <constraint firstItem="Q0K-X8-I39" firstAttribute="leading" secondItem="4nq-It-R30" secondAttribute="leading" constant="16" id="pw5-nV-jEX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8W-fp-nZr" userLabel="hippoView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="677.66666666666663" width="177" height="319"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hippo" translatesAutoresizingMaskIntoConstraints="NO" id="U38-Eu-Mo8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.33333333333348"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfQ-JK-KdV">
+                                                        <rect key="frame" x="16" y="162.33333333333337" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da6-KG-t4B">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="AfQ-JK-KdV" firstAttribute="leading" secondItem="K8W-fp-nZr" secondAttribute="leading" constant="16" id="9DK-1P-RXO"/>
+                                                    <constraint firstItem="da6-KG-t4B" firstAttribute="top" secondItem="K8W-fp-nZr" secondAttribute="top" constant="124" id="EQw-9f-Sk8"/>
+                                                    <constraint firstItem="da6-KG-t4B" firstAttribute="leading" secondItem="K8W-fp-nZr" secondAttribute="leading" constant="16" id="Lff-XQ-b1H"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AfQ-JK-KdV" secondAttribute="trailing" constant="16" id="THR-Cr-Vjm"/>
+                                                    <constraint firstItem="AfQ-JK-KdV" firstAttribute="top" secondItem="da6-KG-t4B" secondAttribute="bottom" constant="4" id="aiK-cz-miF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="da6-KG-t4B" secondAttribute="trailing" constant="16" id="qwl-7T-HxH"/>
+                                                    <constraint firstItem="AfQ-JK-KdV" firstAttribute="top" secondItem="da6-KG-t4B" secondAttribute="bottom" constant="4" id="tP8-jm-7e8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9t-08-gQA" userLabel="lionView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="677.66666666666663" width="177" height="319"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="9qf-Kv-NLn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.33333333333348"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dT-Xf-5gH">
+                                                        <rect key="frame" x="16" y="162.33333333333337" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVB-mD-zXb">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="KVB-mD-zXb" firstAttribute="top" secondItem="F9t-08-gQA" secondAttribute="top" constant="124" id="7GX-7e-x7m"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8dT-Xf-5gH" secondAttribute="trailing" constant="16" id="I5k-ca-xO0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KVB-mD-zXb" secondAttribute="trailing" constant="16" id="JJV-a8-mZ6"/>
+                                                    <constraint firstItem="KVB-mD-zXb" firstAttribute="leading" secondItem="F9t-08-gQA" secondAttribute="leading" constant="16" id="Jgm-DG-sLa"/>
+                                                    <constraint firstItem="8dT-Xf-5gH" firstAttribute="top" secondItem="KVB-mD-zXb" secondAttribute="bottom" constant="4" id="fxT-jn-2hb"/>
+                                                    <constraint firstItem="8dT-Xf-5gH" firstAttribute="leading" secondItem="F9t-08-gQA" secondAttribute="leading" constant="16" id="hFX-r6-5sk"/>
+                                                    <constraint firstItem="8dT-Xf-5gH" firstAttribute="top" secondItem="KVB-mD-zXb" secondAttribute="bottom" constant="4" id="yMG-Ck-Hsk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brY-wk-gns" userLabel="ostrichView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="1012.6666666666667" width="177" height="319"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ostrich" translatesAutoresizingMaskIntoConstraints="NO" id="hky-B2-ngR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.66666666666663"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-DT-3x9">
+                                                        <rect key="frame" x="16" y="162.33333333333326" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1U-y6-paE">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="cIB-DT-3x9" secondAttribute="trailing" constant="16" id="Bh0-rk-CKJ"/>
+                                                    <constraint firstItem="q1U-y6-paE" firstAttribute="leading" secondItem="brY-wk-gns" secondAttribute="leading" constant="16" id="HpC-cT-Mru"/>
+                                                    <constraint firstItem="cIB-DT-3x9" firstAttribute="leading" secondItem="brY-wk-gns" secondAttribute="leading" constant="16" id="JNo-R8-Nfq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="q1U-y6-paE" secondAttribute="trailing" constant="16" id="Nb8-F5-AH5"/>
+                                                    <constraint firstItem="cIB-DT-3x9" firstAttribute="top" secondItem="brY-wk-gns" secondAttribute="top" constant="162.33000000000001" id="QbV-u9-tDe"/>
+                                                    <constraint firstItem="q1U-y6-paE" firstAttribute="top" secondItem="brY-wk-gns" secondAttribute="top" constant="124" id="sq3-jo-JPF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lR5-yH-82d" userLabel="zebraView" customClass="Animals" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="1012.6666666666667" width="177" height="319"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zebra" translatesAutoresizingMaskIntoConstraints="NO" id="8Cm-hn-4U4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="212.66666666666663"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-bf-ZXr">
+                                                        <rect key="frame" x="16" y="162.33333333333326" width="145" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Link">
+                                                            <color key="baseBackgroundColor" red="0.7254902124" green="0.78431367870000002" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9j2-eF-BbQ">
+                                                        <rect key="frame" x="16" y="123.99999999999999" width="145" height="34.333333333333329"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Watch Video">
+                                                            <color key="baseBackgroundColor" red="0.96862745289999996" green="0.79607844350000001" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99607843159999998" green="0.97647058959999999" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="fdh-bf-ZXr" firstAttribute="leading" secondItem="lR5-yH-82d" secondAttribute="leading" constant="16" id="8ak-jq-1FX"/>
+                                                    <constraint firstItem="9j2-eF-BbQ" firstAttribute="leading" secondItem="lR5-yH-82d" secondAttribute="leading" constant="16" id="SKm-Bf-D7E"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fdh-bf-ZXr" secondAttribute="trailing" constant="16" id="Vqr-aF-zJI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9j2-eF-BbQ" secondAttribute="trailing" constant="16" id="nV7-4E-Rpy"/>
+                                                    <constraint firstItem="fdh-bf-ZXr" firstAttribute="top" secondItem="lR5-yH-82d" secondAttribute="top" constant="162.33000000000001" id="ug6-ic-mrk"/>
+                                                    <constraint firstItem="9j2-eF-BbQ" firstAttribute="top" secondItem="lR5-yH-82d" secondAttribute="top" constant="124" id="yBf-0B-l0g"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="4nq-It-R30" firstAttribute="top" secondItem="j1o-OC-uJI" secondAttribute="bottom" constant="16" id="0IH-Do-ALu"/>
+                                            <constraint firstItem="3GM-Bh-hTU" firstAttribute="top" secondItem="JUr-IC-tgJ" secondAttribute="top" constant="8" id="5kZ-DM-x6r"/>
+                                            <constraint firstItem="dxb-DM-B45" firstAttribute="leading" secondItem="JUr-IC-tgJ" secondAttribute="leading" constant="8" id="6Og-vz-qU9"/>
+                                            <constraint firstAttribute="height" constant="1000" id="H57-Sb-yMh"/>
+                                            <constraint firstAttribute="trailing" secondItem="F9t-08-gQA" secondAttribute="trailing" constant="8" id="Hug-0I-rNm"/>
+                                            <constraint firstItem="K8W-fp-nZr" firstAttribute="top" secondItem="dxb-DM-B45" secondAttribute="bottom" constant="16" id="OK2-aC-y7S"/>
+                                            <constraint firstAttribute="trailing" secondItem="lR5-yH-82d" secondAttribute="trailing" constant="8" id="SkQ-Bt-4oq"/>
+                                            <constraint firstItem="lR5-yH-82d" firstAttribute="top" secondItem="F9t-08-gQA" secondAttribute="bottom" constant="16" id="Spo-lJ-2Eh"/>
+                                            <constraint firstItem="j1o-OC-uJI" firstAttribute="top" secondItem="JUr-IC-tgJ" secondAttribute="top" constant="8" id="TNo-pO-Ct4"/>
+                                            <constraint firstItem="brY-wk-gns" firstAttribute="top" secondItem="K8W-fp-nZr" secondAttribute="bottom" constant="16" id="WLy-my-gz6"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1000" id="WV5-i6-NXt"/>
+                                            <constraint firstItem="F9t-08-gQA" firstAttribute="top" secondItem="4nq-It-R30" secondAttribute="bottom" constant="16" id="a80-YN-3Tq"/>
+                                            <constraint firstItem="K8W-fp-nZr" firstAttribute="leading" secondItem="JUr-IC-tgJ" secondAttribute="leading" constant="8" id="aUw-aP-XCn"/>
+                                            <constraint firstAttribute="trailing" secondItem="4nq-It-R30" secondAttribute="trailing" constant="8" id="bm6-kO-dw0"/>
+                                            <constraint firstItem="3GM-Bh-hTU" firstAttribute="leading" secondItem="JUr-IC-tgJ" secondAttribute="leading" constant="8" id="e0Z-Us-FCj"/>
+                                            <constraint firstAttribute="trailing" secondItem="j1o-OC-uJI" secondAttribute="trailing" constant="8" id="h77-Vf-Bth"/>
+                                            <constraint firstItem="dxb-DM-B45" firstAttribute="top" secondItem="3GM-Bh-hTU" secondAttribute="bottom" constant="16" id="iAb-o3-9Pp"/>
+                                            <constraint firstItem="3GM-Bh-hTU" firstAttribute="leading" secondItem="JUr-IC-tgJ" secondAttribute="leading" constant="8" id="kCb-S3-gD9"/>
+                                            <constraint firstItem="brY-wk-gns" firstAttribute="leading" secondItem="JUr-IC-tgJ" secondAttribute="leading" constant="8" id="o7M-s5-yMP"/>
+                                            <constraint firstItem="3GM-Bh-hTU" firstAttribute="top" secondItem="JUr-IC-tgJ" secondAttribute="top" constant="8" id="zeg-d3-dNA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="JUr-IC-tgJ" secondAttribute="bottom" id="1Hp-0I-Af3"/>
+                                    <constraint firstAttribute="bottom" secondItem="JUr-IC-tgJ" secondAttribute="bottom" id="Cm8-Fq-0yR"/>
+                                    <constraint firstAttribute="trailing" secondItem="JUr-IC-tgJ" secondAttribute="trailing" id="GoN-IC-V72"/>
+                                    <constraint firstItem="JUr-IC-tgJ" firstAttribute="top" secondItem="C7I-nO-eAI" secondAttribute="top" id="MdM-Pi-ddO"/>
+                                    <constraint firstAttribute="trailing" secondItem="JUr-IC-tgJ" secondAttribute="trailing" id="NaO-uF-30O"/>
+                                    <constraint firstItem="JUr-IC-tgJ" firstAttribute="leading" secondItem="C7I-nO-eAI" secondAttribute="leading" id="Scb-8w-xKw"/>
+                                    <constraint firstItem="JUr-IC-tgJ" firstAttribute="top" secondItem="C7I-nO-eAI" secondAttribute="top" id="hsG-H7-vso"/>
+                                    <constraint firstItem="JUr-IC-tgJ" firstAttribute="leading" secondItem="C7I-nO-eAI" secondAttribute="leading" id="m7B-Ql-q7C"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JUr-IC-tgJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0u7-qK-tiL"/>
+                            <constraint firstItem="4nq-It-R30" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="2A5-gq-odI"/>
+                            <constraint firstItem="3GM-Bh-hTU" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="2cG-Ei-Z1k"/>
+                            <constraint firstItem="lR5-yH-82d" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="5kV-Lh-wo5"/>
+                            <constraint firstItem="j1o-OC-uJI" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="7yO-hk-YwL"/>
+                            <constraint firstItem="dxb-DM-B45" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="CBq-3w-Sxz"/>
+                            <constraint firstItem="brY-wk-gns" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="Cb9-er-PTg"/>
+                            <constraint firstItem="K8W-fp-nZr" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="F7U-Pc-Pix"/>
+                            <constraint firstItem="F9t-08-gQA" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="Foo-vP-atx"/>
+                            <constraint firstItem="K8W-fp-nZr" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="J1a-Gn-xgk"/>
+                            <constraint firstItem="4nq-It-R30" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="S70-I9-xQi"/>
+                            <constraint firstItem="3GM-Bh-hTU" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="YRs-Us-1SJ"/>
+                            <constraint firstItem="C7I-nO-eAI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YgL-2m-ERI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C7I-nO-eAI" secondAttribute="bottom" id="h1q-u3-EKV"/>
+                            <constraint firstItem="brY-wk-gns" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="iKM-iq-oVp"/>
+                            <constraint firstItem="dxb-DM-B45" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="mEg-hR-aBL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C7I-nO-eAI" secondAttribute="trailing" id="pdB-R9-jGs"/>
+                            <constraint firstItem="F9t-08-gQA" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="pel-0G-CyZ"/>
+                            <constraint firstItem="lR5-yH-82d" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="t8x-BV-DgQ"/>
+                            <constraint firstItem="C7I-nO-eAI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uTm-Tt-pBk"/>
+                            <constraint firstItem="j1o-OC-uJI" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.45" id="znZ-6e-12C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="593-T1-WjG"/>
+                    <size key="freeformSize" width="393" height="1200"/>
+                    <connections>
+                        <outletCollection property="animalImages" destination="M4m-wU-eHo" collectionClass="NSMutableArray" id="U2E-gB-e9L"/>
+                        <outletCollection property="animalImages" destination="okt-Tt-SNu" collectionClass="NSMutableArray" id="zhK-Xm-QP8"/>
+                        <outletCollection property="animalImages" destination="Ob0-GH-AqW" collectionClass="NSMutableArray" id="PvF-ud-Csb"/>
+                        <outletCollection property="animalImages" destination="laq-w2-Gxf" collectionClass="NSMutableArray" id="9Am-MH-lSD"/>
+                        <outletCollection property="animalImages" destination="U38-Eu-Mo8" collectionClass="NSMutableArray" id="eBT-6q-uNh"/>
+                        <outletCollection property="animalImages" destination="9qf-Kv-NLn" collectionClass="NSMutableArray" id="iIt-23-nRk"/>
+                        <outletCollection property="animalImages" destination="hky-B2-ngR" collectionClass="NSMutableArray" id="mlA-GE-oYq"/>
+                        <outletCollection property="animalImages" destination="8Cm-hn-4U4" collectionClass="NSMutableArray" id="RJX-xw-lC9"/>
+                        <outletCollection property="animalViews" destination="3GM-Bh-hTU" collectionClass="NSMutableArray" id="k3f-ds-tKG"/>
+                        <outletCollection property="animalViews" destination="j1o-OC-uJI" collectionClass="NSMutableArray" id="ku2-ns-Ltw"/>
+                        <outletCollection property="animalViews" destination="dxb-DM-B45" collectionClass="NSMutableArray" id="lyX-n3-MuC"/>
+                        <outletCollection property="animalViews" destination="4nq-It-R30" collectionClass="NSMutableArray" id="SWn-Y4-aKa"/>
+                        <outletCollection property="animalViews" destination="K8W-fp-nZr" collectionClass="NSMutableArray" id="VwX-to-nfH"/>
+                        <outletCollection property="animalViews" destination="F9t-08-gQA" collectionClass="NSMutableArray" id="daY-hY-vdp"/>
+                        <outletCollection property="animalViews" destination="brY-wk-gns" collectionClass="NSMutableArray" id="0pF-pP-fYt"/>
+                        <outletCollection property="animalViews" destination="lR5-yH-82d" collectionClass="NSMutableArray" id="TQp-u7-EYU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RXl-fq-CbN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dIC-zD-iDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qRI-JM-P2Y">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u6C-oa-uf9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgG-xz-NQU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cheetah" width="2560" height="1600"/>
+        <image name="elephant" width="2560" height="1600"/>
+        <image name="giraffe" width="2560" height="1600"/>
+        <image name="gorilla" width="2560" height="1600"/>
+        <image name="hippo" width="2560" height="1600"/>
+        <image name="lion" width="2560" height="1600"/>
+        <image name="ostrich" width="2560" height="1600"/>
+        <image name="zebra" width="2560" height="1600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
