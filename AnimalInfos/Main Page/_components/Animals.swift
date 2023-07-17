@@ -10,8 +10,11 @@ import UIKit
 class Animals: UIView {
     
     var webLink : String?
-    var openWebAction: ((_ url: String) -> ())?
+    var path : String?
     
+    var openWebAction: ((_ url: String) -> ())?
+    var openVideoAction: ((_ path: String) -> ())?
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -30,6 +33,7 @@ class Animals: UIView {
     }
     
     @IBAction func openVideoAct(_ sender: Any) {
+        openVideoAction?(path!)
     }
     
     @IBAction func openWebAct(_ sender: Any) {
